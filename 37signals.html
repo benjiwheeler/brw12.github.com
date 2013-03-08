@@ -56,6 +56,12 @@ body {
     text-align: center;
 }
 
+#maincontent {
+    left-margin: auto;
+    right-margin: auto;
+    width: 800px;
+}
+
 nav {
     padding: 40px;
     font-family: arial;
@@ -73,6 +79,16 @@ h1 {
 #navlink {
     float: right;
 }
+
+ul#products li {
+    background: #6a924f
+    background:         linear-gradient(#a1e048, #6a942f);
+    border-radius: 6px;
+    border: 1px solid #ffd100;
+    color: #000;
+    padding: 10px 10px 10px 38px;
+}
+
 </style>
 </head>
 <body>
@@ -81,43 +97,50 @@ h1 {
 <div id="navlink">Company blog Our story Follow us on Twitter System status Sign in</div>
 </nav>
 
+<div id="maincontent">
 <img src="http://37signals.com/images/logo-37s-large.png" />
 
 <div>
 <h1>Making collaboration productive and enjoyable for people every day.</h1>
-Frustration-free web-based apps for collaboration, sharing information, and making decisions.
+<h3>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h3>
 </div>
 
+<ul id="products">
+<li>
 Basecamp®
 Manage Projects
 
 Used by millions for project management.
-
-
+</li>
+<li>
 Highrise®
 Manage Contacts
 
 Know the people you do business with.
-
-
+</li>
+<li>
 Campfire™
 Work in Real-Time
 
 Group chat rooms for your business.
+</li>
+</ul>
 
+<hr />
 
 Customers
 Meet some customers
-Millions of entrepreneurs, freelancers, small businesses, and departments inside big organizations rely on our web apps.
+<h2>Millions of entrepreneurs, freelancers, small businesses, and departments inside big organizations rely on our web apps.</h2>
 
 
 Our loyal customers include designers, developers, freelancers, lawyers, accountants, architects, non-profits, charities, universities, PR firms, retailers, manufacturers, consultants, authors, publishers, government agencies, students, marketers, airlines, restaurants, filmmakers, farmers, and just about everyone in-between.
 
 The world’s most popular brands depend on our products every day. We’ll never take their trust — or your trust — for granted.
 
+<hr />
 
 
-We built the company that we’d want to do business with. We hope you do too.
+<h2>We built the company that we’d want to do business with. We hope you do too.</h2>
 
 1
 Useful is forever
@@ -145,14 +168,20 @@ Long-term contracts are obscene
 No one likes being locked into something they don’t want anymore. Our customers can cancel at any time, no questions asked. No setup/termination fees either.
 
 Find out more
-Our book REWORK is a fresh approach to running a business. It’s a New York Times and Wall Street Journal bestseller.
+
+<hr />
+
+<h2>Our book REWORK is a fresh approach to running a business. It’s a New York Times and Wall Street Journal bestseller.</h2>
 
 
 “If given a choice between investing in someone who has read REWORK or has an MBA, I’m investing in REWORK every time. A must read for every entrepreneur.”
 — Mark Cuban, co-founder HDNet, owner of the Dallas Mavericks
 “The wisdom in these pages is edgy yet simple, straightforward, and proven. Read this book multiple times to help give you the courage you need to get out there and make something great.”
 — Tony Hsieh, CEO of Zappos.com
-Here’s everything we offer, soup to nuts.
+
+<hr />
+
+<h2>Here’s everything we offer, soup to nuts.</h2>
 
 
 Basecamp®
@@ -189,14 +218,22 @@ Ruby on Rails
 A powerful & simple web app framework.
 Open Source
 A list of projects we’ve released & contributed to.
-More about 37signals
-Follow us on Twitter
-Get our newsletter
-Company blog
-37signals API
-Our story
-Home
+
+<hr />
+
+<ul id="taillinks">
+<li>More about 37signals</li>
+<li>Follow us on Twitter</li>
+<li>Get our newsletter</li>
+<li>Company blog</li>
+<li>37signals API</li>
+<li>Our story</li>
+<li>Home</li>
+</ul>
+
 All text and design is copyright ©1999-2013 37signals, LLC. All rights reserved.  Privacy Policy   Security information   Contact us
+
+</div>
 
 </body>
 </html>
