@@ -79,17 +79,36 @@ h1 {
 }
 
 ul#products li {
-  //  display: inline;
-    background-color: #6a924f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#666));
-    background-image:         linear-gradient(#ccc, #666);
     width: 200px;
+    float: left;
+    background-color: #6a924f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#aaa));
+    background-image:         linear-gradient(#ccc, #666);
     margin: 0 20px;
     border-radius: 6px;
     border: 1px solid #bbb;
+    font-family: verdana;
     color: #000;
 //    padding: 10px 10px 10px 38px;
 }
+
+.productlink {
+    color: #99f;
+    font-size: 18px;
+    font-style: underline;
+}
+
+.productinfo {
+    font-size: 14px;
+}
+
+.producttagline {
+    color: #f99;
+}
+
+.productdesc {
+    color: #888;
+}	
 
 </style>
 </head>
@@ -110,11 +129,13 @@ ul#products li {
 <ul id="products">
 <li>
 <img src="http://37signals.com/images/logo-bc.png" />
-Basecamp®
-Manage Projects
+<span class="productlink">Basecamp</span><span class="registerd">�</span>
 
-Used by millions for project management.
-</li>
+<div class="productinfo">
+<p class="producttagline">Manage Projects</p>
+
+<p class="productdesc">Used by millions for project management.</p>
+</div>
 <li>
 <img src="http://37signals.com/images/logo-bc.png" />
 Highrise®
