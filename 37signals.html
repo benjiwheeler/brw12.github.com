@@ -55,6 +55,9 @@ body {
     text-align: center;
 }
 
+a.inconspicuous {
+    text-decoration: none;
+}
 #maincontent {
     margin: 0 auto;
     width: 800px;
@@ -71,6 +74,19 @@ h1 {
     font-size: 48px;
 }
 
+hr:before {
+    content: "* * *";
+    font-size: 32px;
+    font-family: garamond;
+    font-weight: bold;
+    color: #ccc;
+}
+
+hr {
+    margin: 50px 0;
+    border: 0;
+}
+
 #tagline {
     float: left;
 }
@@ -78,13 +94,20 @@ h1 {
     float: right;
 }
 
-ul#products li {
-    width: 200px;
+#products {
+    margin: 10px auto;
+    display: block;
+}
+
+
+ul#productlist li {
+    width: 160px;
     float: left;
     background-color: #6a924f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#aaa));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#eee));
     background-image:         linear-gradient(#ccc, #666);
     margin: 0 20px;
+    padding: 10px 10px;
     border-radius: 6px;
     border: 1px solid #bbb;
     font-family: verdana;
@@ -93,9 +116,11 @@ ul#products li {
 }
 
 .productlink {
-    color: #99f;
+    color: #66b;
     font-size: 18px;
-    font-style: underline;
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 28px;
 }
 
 .productinfo {
@@ -103,12 +128,21 @@ ul#products li {
 }
 
 .producttagline {
-    color: #f99;
+    color: #e66;
+    line-height: 36px;
+    font-weight: bold;
 }
 
 .productdesc {
     color: #888;
+    line-height: 18px;
 }	
+
+.registered {
+    font-size: 6px;
+    position: relative;
+    top: -1.5em;
+}
 
 </style>
 </head>
@@ -126,31 +160,36 @@ ul#products li {
 <h3>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h3>
 </div>
 
-<ul id="products">
-<li>
-<img src="http://37signals.com/images/logo-bc.png" />
-<span class="productlink">Basecamp</span><span class="registerd">®</span>
+<div id="products">
+<ul id="productlist">
 
+<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+bc.png" />
+<span class="productlink">Basecamp</span><span class="registered">®</span>
 <div class="productinfo">
 <p class="producttagline">Manage Projects</p>
-
 <p class="productdesc">Used by millions for project management.</p>
-</div>
-<li>
-<img src="http://37signals.com/images/logo-bc.png" />
-HighriseÂ®
-Manage Contacts
+</div></a></li>
 
-Know the people you do business with.
-</li>
-<li>
-<img src="http://37signals.com/images/logo-bc.png" />
-Campfireâ„¢
-Work in Real-Time
+<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+bc.png" />
+<span class="productlink">Highrise</span><span class="registered">®</span>
+<div class="productinfo">
+<p class="producttagline">Manage Contacts</p>
+<p class="productdesc">Know the people you do business with.</p>
+</div></a></li>
 
-Group chat rooms for your business.
-</li>
+<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+bc.png" />
+<span class="productlink">Campfire</span><span class="registered">®</span>
+<div class="productinfo">
+<p class="producttagline">Work in Real-Time</p>
+<p class="productdesc">Group chat rooms for your business.</p>
+</div></a></li>
+
 </ul>
+testing
+</div>
 
 <hr />
 
