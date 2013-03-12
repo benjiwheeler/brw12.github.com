@@ -1,7 +1,18 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-/* http://meyerweb.com/eric/tools/css/reset/ 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='/js/lib/dummy.js'></script>
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,7 +23,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -31,7 +42,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ol, ul {
+ul {
 	list-style: none;
 }
 blockquote, q {
@@ -72,6 +83,21 @@ nav {
 h1 {
     font-family: garamond;
     font-size: 48px;
+    font-weight: bold;
+}
+
+p.largedesc + p.largedesc { margin-top: 0.8em; }
+.largedesc {
+    text-align: left;
+    font-family: garamond;
+    font-size: 22px;
+    color: #777;
+    line-height: 1.5em;
+}
+h4 {
+    font-family: garamond;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 hr:before {
@@ -97,6 +123,8 @@ hr {
 #products {
     margin: 10px auto;
     display: block;
+    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -136,7 +164,47 @@ ul#productlist li {
 .productdesc {
     color: #888;
     line-height: 18px;
-}	
+}
+
+#reasons-one {
+    float: left;
+    width: 350px;
+    margin: 0 5px 0 0
+}
+
+#reasons-two {
+    float: right;
+    width: 350px;
+    margin: 0 0 0 5px
+}
+
+ol {
+     font-size: 42px;
+   text-align: left;
+    font-weight: bold;
+    color: #bbb;
+}
+
+ol li {
+}
+
+ol li p.title {
+vertical-align:top;
+    color: #c00;
+       top: 20px;
+    position: relative;
+    font-family: tahoma;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ol li p.description {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: verdana;
+    line-height: 1.5em;
+}
+
 
 .registered {
     font-size: 6px;
@@ -144,9 +212,22 @@ ul#productlist li {
     top: -1.5em;
 }
 
-</style>
+img.globe {
+    float: right;
+    margin: 10px;
+}
+
+img.customerlogos {
+    display: block;
+    margin: 10px;
+}
+  </style>
+
+
+
 </head>
 <body>
+  <body>
 <nav>
 <div id="tagline">Happy Friday.</div>
 <div id="navlink">Company blog Our story Follow us on Twitter System status Sign in</div>
@@ -157,7 +238,7 @@ ul#productlist li {
 
 <div>
 <h1>Making collaboration productive and enjoyable for people every day.</h1>
-<h3>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h3>
+<h4>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
 </div>
 
 <div id="products">
@@ -188,80 +269,96 @@ bc.png" />
 </div></a></li>
 
 </ul>
-testing
 </div>
 
 <hr />
 
 Customers
 Meet some customers
-<h2>Millions of entrepreneurs, freelancers, small businesses, and departments inside big organizations rely on our web apps.</h2>
+<h1>Millions of entrepreneurs, freelancers, small businesses, and departments inside big organizations rely on our web apps.</h1>
 
+<img class="globe" src="http://37signals.com/images/img-world-badge.png"> 
+<p class="largedesc">Our loyal customers include designers, developers, freelancers, lawyers, accountants, architects, non-profits, charities, universities, PR firms, retailers, manufacturers, consultants, authors, publishers, government agencies, students, marketers, airlines, restaurants, filmmakers, farmers, and just about everyone in-between.</p>
+<p class="largedesc">The worldís most popular brands depend on our products every day. Weíll never take their trust ó or your trust ó for granted.</p>
 
-Our loyal customers include designers, developers, freelancers, lawyers, accountants, architects, non-profits, charities, universities, PR firms, retailers, manufacturers, consultants, authors, publishers, government agencies, students, marketers, airlines, restaurants, filmmakers, farmers, and just about everyone in-between.
-
-The world‚Äôs most popular brands depend on our products every day. We‚Äôll never take their trust ‚Äî or your trust ‚Äî for granted.
-
+    <img class="customerlogos" src="http://37signals.com/images/logos-companies-bw.png" />
+    
 <hr />
 
 
-<h2>We built the company that we‚Äôd want to do business with. We hope you do too.</h2>
+<h2>We built the company that weíd want to do business with. We hope you do too.</h2>
 
-1
-Useful is forever
-Bells and whistles wear off, but usefulness never does. We build useful software that does just what you need and nothing you don‚Äôt.
-2
-Great service is everything
-We‚Äôre famous for fast and friendly customer service. We work hard to make sure we live up to that reputation every day. See how our customers rate our service.
-3
-Clarity is king
-Buzzwords, lingo, and sensationalized sales-and-marketing-speak have no place at 37signals. We communicate clearly and honestly.
-4
-Our customers are our investors
-Our customers fund our daily operations by paying for our products. We answer to them ‚Äî not investors, the stock market, or a board of directors.
-5
-The basics are beautiful
-We‚Äôll never overlook what really matters: The basics. Great service, ease of use, honest pricing, and respect for our customer‚Äôs time, money, and trust.
-6
-No hidden fees or secret prices
-We believe everyone is entitled to the best price we can offer. Our prices are public, published right on our site, and the same no matter who you are.
-7
-Software should be easy
-Our products are intuitive. You‚Äôll pick them up in seconds or minutes, not hours, days or weeks. We don‚Äôt sell you training because you don‚Äôt need it.
-8
-Long-term contracts are obscene
-No one likes being locked into something they don‚Äôt want anymore. Our customers can cancel at any time, no questions asked. No setup/termination fees either.
+    <div style="position: relative; overflow: hidden; width: 100%;">
+    <div id="reasons-one">
+<ol>
+    <li><p class="title">Useful is forever</p>
+<p class="description">Bells and whistles wear off, but usefulness never does. We build useful software that does just what you need and nothing you donít.</p>
+    </li>        
 
-Find out more
+<li><p class="title">Great service is everything</p>
+<p class="description">Weíre famous for fast and friendly customer service. We work hard to make sure we live up to that reputation every day. See how our customers rate our service.</p>
+    </li>
+
+<li><p class="title">Clarity is king</p>
+<p class="description">Buzzwords, lingo, and sensationalized sales-and-marketing-speak have no place at 37signals. We communicate clearly and honestly.</p>
+    </li>
+
+<li><p class="title">Our customers are our investors</p>
+<p class="description">Our customers fund our daily operations by paying for our products. We answer to them ó not investors, the stock market, or a board of directors.</p>
+    </li>
+    </ol>
+    </div>
+    
+<div id="reasons-two">
+    <ol start=6>
+
+<li><p class="title">The basics are beautiful</p>
+<p class="description">Weíll never overlook what really matters: The basics. Great service, ease of use, honest pricing, and respect for our customerís time, money, and trust.</p>
+    </li>
+<li><p class="title">No hidden fees or secret prices</p>
+<p class="description">We believe everyone is entitled to the best price we can offer. Our prices are public, published right on our site, and the same no matter who you are.</p>
+    </li>
+
+<li><p class="title">Software should be easy</p>
+<p class="description">Our products are intuitive. Youíll pick them up in seconds or minutes, not hours, days or weeks. We donít sell you training because you donít need it.</p>
+    </li>
+
+<li><p class="title">Long-term contracts are obscene</p>
+<p class="description">No one likes being locked into something they donít want anymore. Our customers can cancel at any time, no questions asked. No setup/termination fees either.</p>
+    </li>
+    </ol>
+    </div>
+    </div>
 
 <hr />
 
-<h2>Our book REWORK is a fresh approach to running a business. It‚Äôs a New York Times and Wall Street Journal bestseller.</h2>
+<h1>Our book REWORK is a fresh approach to running a business. Itís a New York Times and Wall Street Journal bestseller.</h1>
 
 
-‚ÄúIf given a choice between investing in someone who has read REWORK or has an MBA, I‚Äôm investing in REWORK every time. A must read for every entrepreneur.‚Äù
-‚Äî Mark Cuban, co-founder HDNet, owner of the Dallas Mavericks
-‚ÄúThe wisdom in these pages is edgy yet simple, straightforward, and proven. Read this book multiple times to help give you the courage you need to get out there and make something great.‚Äù
-‚Äî Tony Hsieh, CEO of Zappos.com
+ìIf given a choice between investing in someone who has read REWORK or has an MBA, Iím investing in REWORK every time. A must read for every entrepreneur.î
+ó Mark Cuban, co-founder HDNet, owner of the Dallas Mavericks
+ìThe wisdom in these pages is edgy yet simple, straightforward, and proven. Read this book multiple times to help give you the courage you need to get out there and make something great.î
+ó Tony Hsieh, CEO of Zappos.com
 
 <hr />
 
-<h2>Here‚Äôs everything we offer, soup to nuts.</h2>
+<h1>Hereís everything we offer, soup to nuts.</h1>
 
 
-Basecamp¬Æ
+BasecampÆ
 Manage Projects
 As easy as email, just way more powerful.
 
 
-Highrise¬Æ
+HighriseÆ
 Manage Contacts
 Over 20,000,000 contacts managed with Highrise.
 
 
-Campfire‚Ñ¢
+Campfireô
 Work in Real-Time
 Private group chat rooms for your business.
+
 
 Our services
 The Job Board
@@ -282,7 +379,7 @@ Our open-source contributions
 Ruby on Rails
 A powerful & simple web app framework.
 Open Source
-A list of projects we‚Äôve released & contributed to.
+A list of projects weíve released & contributed to.
 
 <hr />
 
@@ -301,4 +398,9 @@ All text and design is copyright ¬©1999-2013 37signals, LLC. All rights reserved
 </div>
 
 </body>
+</html>
+  
+</body>
+
+
 </html>
