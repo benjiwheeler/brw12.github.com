@@ -1,16 +1,18 @@
 
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>37Signals</title>
   
+  <script type='text/javascript' src='jquery-1.9.1.js'></script>
   <script type='text/javascript' src='main.js'></script>
   <link rel="stylesheet" type="text/css" href="main.css">
   
 </head>
 <body>
-  <body>
+
 <nav>
 <div id="tagline">Happy Friday.</div>
 <div id="navlink">Company blog Our story Follow us on Twitter System status Sign in</div>
@@ -19,36 +21,58 @@
 <div id="maincontent">
 <img src="http://37signals.com/images/logo-37s-large.png" />
 
-<div>
+    <div id="defaulttitle" class="title">
 <h1>Making collaboration productive and enjoyable for people every day.</h1>
-<h4>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
+<h3>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h3>
 </div>
 
+<div id="basecamptitle" class="title hidden">
+    <h2>Basecamp is the project management tool you wish you had on your last project.</h2>
+    <h4>Are you still managing projects with email? Are you still using Excel for your to-do lists? It&rsquo;s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</h4>
+    <img id="basecamparrow" src="http://37signals.com/images/arrow-left.png">
+</div>
+    
+<div id="highrisetitle" class="title hidden">
+    <h2><span>Highrise</span> remembers the important things about people you&rsquo;d normally forget.</h2>
+    <h4>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</h4>
+    <img id="highrisearrow" src="http://37signals.com/images/arrow-left.png">
+</div>
+    
+<div id="campfiretitle" class="title hidden">
+    <h2>From near or far, <span>Campfire</span> helps teams work together over the web in real-time.</h2>
+    <h4>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It&rsquo;s game changing. We couldn&rsquo;t run our own business without Campfire.</h4>
+    <img id="campfirearrow" src="http://37signals.com/images/arrow-right.png">
+</div>
+    
+    
 <div id="products">
 <ul id="productlist">
 
-<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+<li id="basecamp"><img src="http://37signals.com/images/logo-
 bc.png" />
 <span class="productlink">Basecamp</span><span class="registered">&reg;</span>
 <div class="productinfo">
 <p class="producttagline">Manage Projects</p>
 <p class="productdesc">Used by millions for project management.</p>
-</div></a></li>
+<p class="morebutton hidden">Find out more</p>
+</div></li>
 
-<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
-bc.png" />
+<li id="highrise"><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+hr.png" />
 <span class="productlink">Highrise</span><span class="registered">&reg;</span>
 <div class="productinfo">
 <p class="producttagline">Manage Contacts</p>
 <p class="productdesc">Know the people you do business with.</p>
+<p class="morebutton hidden">Find out more</p>
 </div></a></li>
 
-<li><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
-bc.png" />
+<li id="campfire"><a class="inconspicuous" href=""><img src="http://37signals.com/images/logo-
+cf.png" />
 <span class="productlink">Campfire</span><span class="registered">&reg;</span>
 <div class="productinfo">
 <p class="producttagline">Work in Real-Time</p>
 <p class="productdesc">Group chat rooms for your business.</p>
+<p class="morebutton hidden">Find out more</p>
 </div></a></li>
 
 </ul>
@@ -179,11 +203,7 @@ A list of projects we&rsquo;ve released & contributed to.
 All text and design is copyright ©1999-2013 37signals, LLC. All rights reserved.  Privacy Policy   Security information   Contact us
 
 </div>
-
-</body>
-</html>
-  
-</body>
-
+    </body>
+    
 
 </html>
